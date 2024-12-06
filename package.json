@@ -3,27 +3,37 @@
   "type": "module",
   "version": "0.1.0",
   "packageManager": "yarn@4.5.3",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "author": "Jeremy Hibiki <JeremyJiang430@outlook.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Jeremy-Hibiki/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jeremy-Hibiki/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jeremy-Hibiki/eslint-config/issues"
+  },
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     },
     "./eslint": {
-      "require": "./dist/eslint.cjs",
+      "types": "./dist/eslint.d.ts",
       "import": "./dist/eslint.js",
-      "types": "./dist/eslint.d.ts"
+      "require": "./dist/eslint.cjs"
     },
     "./prettier": {
-      "require": "./dist/prettier.cjs",
+      "types": "./dist/prettier.d.ts",
       "import": "./dist/prettier.js",
-      "types": "./dist/prettier.d.ts"
+      "require": "./dist/prettier.cjs"
     },
     "./package.json": "./package.json"
   },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
