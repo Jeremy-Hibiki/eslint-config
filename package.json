@@ -2,6 +2,7 @@
   "name": "@jeremy-hibiki/eslint-config",
   "type": "module",
   "version": "0.1.0",
+  "private": false,
   "packageManager": "yarn@4.5.3",
   "author": "Jeremy Hibiki <JeremyJiang430@outlook.com>",
   "license": "MIT",
@@ -12,6 +13,10 @@
   },
   "bugs": {
     "url": "https://github.com/Jeremy-Hibiki/eslint-config/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "exports": {
     ".": {
@@ -41,7 +46,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepublish": "yarn build",
-    "publish": "yarn publish"
+    "publish": "yarn npm publish"
   },
   "peerDependencies": {
     "eslint": "^9",
