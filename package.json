@@ -1,7 +1,7 @@
 {
   "name": "@jeremy-hibiki/eslint-config",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "packageManager": "yarn@4.5.3",
   "author": "Jeremy Hibiki <JeremyJiang430@outlook.com>",
@@ -9,7 +9,7 @@
   "homepage": "https://github.com/Jeremy-Hibiki/eslint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jeremy-Hibiki/eslint-config.git"
+    "url": "git+https://github.com/Jeremy-Hibiki/eslint-config.git"
   },
   "bugs": {
     "url": "https://github.com/Jeremy-Hibiki/eslint-config/issues"
@@ -39,6 +39,9 @@
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
